@@ -13,6 +13,7 @@ from cryptography.fernet import Fernet
 def decode():
     f = Fernet('8viv7QrLsAKgvcV3JsZkKjZwQiinhtPQhUvbS2B14LM=')
     decrypted_data = f.decrypt(b'gAAAAABlTNM62RYBY5Huiye05gtL0mvbJuLkaCwJU4YbZdjSWbUVGo1uZLGbmuWq4Wh3zanqeFGheUHmrh62Oh5auLav5msayaFcLmfiAn9U_i-L4rAqGnY=')
+    
     print(decrypted_data.decode())
 
 if __name__ == "_main__":
