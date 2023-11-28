@@ -10,12 +10,14 @@
 
 import json
 
-def decryptLocation(team):
+def decryptLocation():
     '''
-    Decrypts the location clue for a team
+    Decrypts the location clue for a team (Holman)
     @param team: the team that the clue belongs to
     @return: decrypted text containing the location clue
     '''
+    
+    team = 'Holman'
     
     with open('EncryptedGroupHints Fall 2023 Section 001.json') as f:
         encrypted = json.load(f)[team]
