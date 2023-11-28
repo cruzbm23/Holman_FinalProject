@@ -12,9 +12,8 @@ import json
 
 def decryptLocation():
     '''
-    Decrypts the location clue for a team (Holman)
-    @param team: the team that the clue belongs to
-    @return: decrypted text containing the location clue
+    Decrypts and prints the location clue for a team (Holman)
+    @return: None
     '''
     
     team = 'Holman'
@@ -26,4 +25,5 @@ def decryptLocation():
         english = f.read().split('\n')
         
     decrypted = ' '.join([english[int(index)] for index in encrypted])
-    return decrypted[0].upper() + decrypted[1:]
+    print(decrypted[0].upper() + decrypted[1:])
+
